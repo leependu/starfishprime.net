@@ -113,12 +113,12 @@
 			<table width="100%" bordercolor="orange" border="1" cellspacing="5" cellpadding="0">
 			<tbody>
 				<tr>
-					<td><a href="https://starfishprime.net/press/"><h3>>> PRESS <<</h3></a></td>
+					<td><a href="https://starfishprime.net/press/"><h3><div id="blink1">>></div> PRESS <div id="blink2"><<</div></h3></a></td>
 					<td><img class="tables link-table" src="images/c32a40f3-3dd2-4221-9741-369395fab2d3.JPEG" alt=""></td>
 				</tr>
 				<tr>
 					<td><img class="tables link-table" src="images/8b360698-0482-4580-9773-23fa9573f375.JPG" alt=""></td>
-					<td><h3><a href="https://starfishprime.net/shows/"><h3>>> SHOWS <<</h3></a></h3></td>
+					<td><a href="https://starfishprime.net/shows/"><h3><div id="blink3">>></div> SHOWS <div id="blink4"><<</div></h3></a></td>
 				</tr>
 				<tr>
 					<td><img class="tables link-table" src="images/209e65bc-314e-45df-845a-9ca32d7300fe.jpg" alt=""></td>
@@ -217,6 +217,30 @@
 		document.getElementById("countdown").innerHTML = "release";
 	  }
 	}, 1000);
+</script>
+	
+<!-- below is code for blinking -->
+<script>
+var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+var t = setInterval(function () {
+    var ele = document.getElementById('blink1');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+var t = setInterval(function () {
+    var ele = document.getElementById('blink2');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+var t = setInterval(function () {
+    var ele = document.getElementById('blink3');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+var t = setInterval(function () {
+    var ele = document.getElementById('blink4');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
 </script>
 	
 </body>
