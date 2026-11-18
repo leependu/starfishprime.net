@@ -193,20 +193,8 @@
 <script>
 function toggleEmbed(link) {
     var container = link.nextElementSibling;
-    if (container.classList.contains('visible')) {
-        container.classList.remove('visible');
-        container.innerHTML = '';
-        link.textContent = '[FLYER]';
-    } else {
-        var iframe = document.createElement('iframe');
-        iframe.src = container.getAttribute('data-src');
-        iframe.width = container.getAttribute('data-width');
-        iframe.height = container.getAttribute('data-height');
-        iframe.allowFullscreen = true;
-        container.appendChild(iframe);
-        container.classList.add('visible');
-        link.textContent = '[CLOSE]';
-    }
+    var isVisible = container.classList.toggle('visible');
+    link.textContent = isVisible ? '[CLOSE]' : '[FLYER]';
 }
 </script>
 
