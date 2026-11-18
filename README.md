@@ -1,4 +1,4 @@
-# <img src="./images/ico.ico" width="36" height="36"> starfishprime.net.git
+# <img src="./images/favicon.ico" width="36" height="36"> starfishprime.net.git
 
 `GitHub Pages` -> [starfishprime.net](https://starfishprime.net)
 
