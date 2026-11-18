@@ -66,6 +66,35 @@ a {text-decoration:none;color:dodgerblue;}
 .table-apple {
 	background-color:#fa243c;
 }
+.embedLink {
+    font-size: x-small;
+    vertical-align: middle;
+    cursor: pointer;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.embedLink:hover {
+    color: red;
+}
+
+.embedContainer {
+    display:none;
+    clear:both;
+}
+
+.embedContainer.visible {
+    display:block;
+}
+
+.embedContainer iframe {
+    border: none;
+    max-width: 100%;
+}
+.flyer {
+	width:350px;
+	height:auto;
+}
 h1 /*header title*/ {
 	font-size:70px;
 	font-weight:bold;
